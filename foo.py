@@ -1,4 +1,4 @@
-print("version 0.0.2")
+print("version 1.0.0")
 print("Hello foo")
 
-print("This is second version with some changes") 
+print("Now I have something new...") 

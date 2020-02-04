@@ -8,12 +8,12 @@ ale również za pomocą taga, np:
 ```mój_plik.py@1.2.5```
 Po użyciu komendy ```git log``` można zobaczyć wszystkie commity wraz z flagami. 
 ### Otagowanie pliku nadając mu wersjonowanie
-Tworzę sobie sobie jakiś plik: 
-``` touch plik.py```
-Dodaję go:
-```git add plik.py```
-Commituję:
-```git commit -m "Moja pierwsza wersja"```
+Tworzę sobie sobie jakiś plik: \
+``` touch plik.py```\
+Dodaję go:\
+```git add plik.py```\
+Commituję:\
+```git commit -m "Moja pierwsza wersja"```\
 Taguję:
 ```git tag plik.py@0.0.1```
 Pushuję plik:

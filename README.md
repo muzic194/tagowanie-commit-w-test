@@ -8,15 +8,15 @@ ale również za pomocą taga, np:\
 ```mój_plik.py@1.2.5```\
 Po użyciu komendy ```git log``` można zobaczyć wszystkie commity wraz z flagami. \
 ### Otagowanie pliku nadając mu wersjonowanie
-Tworzę sobie sobie jakiś plik: \
-``` touch plik.py```\
+Tworzę sobie sobie jakiś folder "plik": \
+``` touch plik```\
 Dodaję go:\
-```git add plik.py```\
+```git add plik```\
 Commituję:\
 ```git commit -m "Moja pierwsza wersja"```\
 Taguję:\
-```git tag plik.py@0.0.1```\
-Pushuję plik:\
+```git tag plik@0.0.1```\
+Pushuję:\
 ```git push```\
 Pushuję tagi:\
 ```git push --tags```\
@@ -31,21 +31,21 @@ Mogę sobie zobaczyć listę tagów jakie były do tej pory:\
 ```git tag```\
 Lista dostępna jest też w repo na github, np. tutaj: https://github.com/muzic194/version-controll-using-commit-tag/tags
 Jeśli chcę zobaczyć jakie do tej pory były wersję dla mojego pliku nad jakim pracuję, żeby wiedzieć jaką mu nadać to można użyć grep: \
-```git tag | grep foo.py```.\
+```git tag | grep plik```.\
 albo: \
-```git show foo.py```\
+```git show plik```\
 ***
 
 ### Chcę zobaczyć jak wyglądał mój plik w starszej wersji, np.v0.0.2
 Chcę zobaczyć zawartość  pliku plik.py w wersji 0.0.2:\
-```git show plik.py plik.py@0.0.2```\
+```git show plik@0.0.2:plik.py```\
 Mogę się dostać do commita z tą wersją poprzez:\
-```git show plik.py@0.0.2```\
+```git show plik@0.0.2```\
 Jeśli chcę przywrócić starą wersję bo nowa nie działa i nie wiem jak naprawić: \
-```git show plik.py@0.0.2 > plik.py```\
+```git show plik@0.0.2:plik.py > plik.py```\
 Oraz sobie pracować na starej wersji repozytorium kiedy była właśnie ta wersja: \
-```git checkout plik.py@0.0.2```\
+```git checkout plik@0.0.2```\
 ***
 ###### Dodałam zły tag, chcę usunąć i zrobić nowy
-```git -d tag -d nazwa_pliku@x.y.z```\
+```git -d tag -d nazwa_folderu@x.y.z```\
 ***

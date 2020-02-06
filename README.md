@@ -5,8 +5,11 @@ Wersjonując za pomocą tagów każda nowa wersja nie będzie się wiązała z k
 Jeśli commity są otagowane to można się do nich dostać nie tylko za pomocą id commita np. \
 ```7ec8a4422941d8aaf706494d1e2b6b3f33d4a1ef``` \
 ale również za pomocą taga, np:\
-```mój_plik.py@1.2.5```\
+```mój_plik@1.2.5```\
 Po użyciu komendy ```git log``` można zobaczyć wszystkie commity wraz z flagami. \
+
+mój_plik użyty powyżej może być też katalogiem albo nazwą projektu (co jest lepszą praktyką niż tagowanie bezpośrednio skryptów,cjeśli w repozytoium jest więcej niż jeden plik o takiej samej nazwie (np. test.sh albo Dockerfile). 
+
 ### Otagowanie pliku nadając mu wersjonowanie
 Tworzę sobie sobie jakiś folder "plik": \
 ``` touch plik```\
